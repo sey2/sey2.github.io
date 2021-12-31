@@ -4,7 +4,7 @@ author: SeYoung
   name: pangSe
   link: https://github.com/sey2
 date: 2021-12-29 19:52:00 +0800
-categories: [Anroid]
+categories: Anroid
 tags: [Anroid,Vies,Linear Layout, layout]
 math: true
 mermaid: true
