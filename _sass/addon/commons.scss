@@ -615,7 +615,7 @@ $sidebar-display: "sidebar-display";
   left: 0;
   height: 100%;
   overflow-y: auto;
-  width: $sidebar-width;
+  width: 50px; //$sidebar-width;
   z-index: 99;
   /*background: var(--sidebar-bg); */
   background-image: url('/assets/img/cover.jpg');
