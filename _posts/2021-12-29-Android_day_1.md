@@ -1,7 +1,7 @@
 ---
 title: Linear Layout"
 author: SeYoung
-  name: pangSe
+  name: seyoung
   link: https://github.com/sey2
 date: 2021-12-29 19:52:00 +0800
 categories: Anroid
