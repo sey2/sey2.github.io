@@ -1,7 +1,7 @@
 ---
 title: "Linear Layout"
 date: '2021-12-29 19:52:00 +0800'
-categories: Anroid
+categories: Android
 tags: [anroid,view,linear layout, layout]
 ---
 
