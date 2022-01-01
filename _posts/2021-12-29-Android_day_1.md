@@ -3,6 +3,7 @@ title: "Linear Layout"
 date: '2021-12-29 19:52:00 +0800'
 categories: Android
 tags: [anroid,view,linear layout, layout]
+mermaid: true
 ---
 
 
@@ -18,7 +19,7 @@ android:orientation = "horizontal"
 
 ## Features
 | android: | 기능 |
-| ------ | ------ |
+| :---: | :---: |
 | math_parent | 부모 컨테이너의 남아있는 모든 여유 공간을 채움|
 | wrap_content |뷰 안에 들어있는 내용물의 크기에 맞게 뷰의 크기가 결정 |
 | dp |임의로 원하는 길이를 지정한다. |
