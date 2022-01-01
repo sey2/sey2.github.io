@@ -1,7 +1,7 @@
 ---
 title: Linear Layout"
 author: seyoung
-  name: Cotes Chung
+  name: seyoung
   link: https://github.com/sey2/sey2.github.io
 date: '2021-12-29 19:52:00 +0800'
 categories: Anroid
