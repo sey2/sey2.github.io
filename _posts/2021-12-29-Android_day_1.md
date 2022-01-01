@@ -6,13 +6,12 @@ categories: Anroid
 tags: [anroid,view,linear layout, layout]
 math: true
 mermaid: true
-image:
-  src: /assets/img/posts/Linear.png
-  width: 800
-  height: 500
+# image:
+# src: /assets/img/posts/Linear.png
+# width: 800
+# height: 500
+
 ---
-
-
 
 
 ## LinerLayout
