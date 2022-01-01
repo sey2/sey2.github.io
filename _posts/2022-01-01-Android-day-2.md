@@ -39,5 +39,23 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 
+** 자동으로 추가되는 context:와 text:는 안드로이드 스튜디오가 자동으로 보여주는 글자이므로 입력하지 않도록 주의하자 ! <br><br>
+
+자 인제 소스 파일에 함수를 추가 하였으니 버튼이 클릭되면 함수가 호출 되게 설정을 바꿔주면 끝난다.<br>
+
+
+![13](https://user-images.githubusercontent.com/54762273/147842805-caf3d316-15f0-49cd-834a-5e96dcf03066.jpg) <br>
+
+**확인1 버튼을 선택한 상태로 속성 창에서 onClick 속성 값으로 onButtonClicked를 선택하면 된다.**
+
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/54762273/147842855-6b961024-efa4-493f-b51a-e69006556850.gif) <br>
+
+위 과정을 문제 없이 잘 했다면 영상처럼 버튼을 클릭하면 메세지가 나타났다 사라지게 된다.
+
+
+
+
+
 
 
