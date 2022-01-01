@@ -18,6 +18,8 @@ android:orientation = "horizontal"
 ![12](https://user-images.githubusercontent.com/54762273/127168417-5e6e4306-0595-4b14-9641-c4c8245ba4be.png)
 
 ## Features
+
+
 |android|기능|
 |:---:|:---:|
 |math_parent|부모 컨테이너의 남아있는 모든 여유 공간을 채움|
@@ -25,6 +27,7 @@ android:orientation = "horizontal"
 |dp|임의로 원하는 길이를 지정한다.|
 |id|뷰나 레이아웃의 아이디를 지정한다.|
 |background| 뷰의 배경을 설정한다.|
+
 
 ```sh
 <LinearLayout
