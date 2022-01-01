@@ -5,8 +5,8 @@ order: 4
 ---
 <p>
   <a href="http://sey2.github.io" target="_blank"><img src="https://img.shields.io/badge/blog-FECC00?style=flat-square&logo=Bloglovin&logoColor=white"/></a>
-   <a href="https://www.facebook.com/profile.php?id=100003781218202" target="_blank"><img src="https://img.shields.io/badge/Insta-1877F2?style=flat-square&logo=facebook&logoColor=white"/></a>
-    <a href="https://www.instagram.com/casio2978" target="_blank"> <img src="https://img.shields.io/badge/Insta-E4405F?style=flat-square&logo=Instagram&logoColor=white"/></a>
+   <a href="https://www.facebook.com/profile.php?id=100003781218202" target="_blank"><img src="https://img.shields.io/badge/Facebook-1877F2?style=flat-square&logo=facebook&logoColor=white"/></a>
+    <a href="https://www.instagram.com/casio2978" target="_blank"> <img src="https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=Instagram&logoColor=white"/></a>
 
 </p>
 
