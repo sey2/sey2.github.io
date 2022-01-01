@@ -2,7 +2,7 @@
 title: "Deploy Error"
 author: seyoung
 date: '2022-01-01 10:27:00 +0900'
-categories: 삽질 일기
+categories: 삽질_일기
 tags: [git, error]
 math: true
 mermaid: true
