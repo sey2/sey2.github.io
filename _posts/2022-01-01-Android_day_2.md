@@ -11,6 +11,16 @@ permalink: /blog/Day2
 usemathjax: true
 ---
 
+---
+title: 안드로이드 버튼 추가하기 "
+author: seyoung
+date: '2022-01-01 00:19:00 +0800'
+categories: Android
+tags: [andorid,buuton]
+math: true
+mermaid: true
+---
+
 ## 버튼 추가하기
 
 ![13](https://user-images.githubusercontent.com/54762273/147830076-e5294087-3585-4065-a5a2-de84a525e74c.PNG)
