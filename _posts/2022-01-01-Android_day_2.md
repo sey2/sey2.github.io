@@ -1,17 +1,4 @@
 ---
-layout: post
-title:  "안드로이드 버튼 추가하기"
-summary: "Getting Started using devlopr-jekyll"
-author: seyoung
-date: '2021-01-01 00:19:00'
-category: Android
-thumbnail: /assets/img/posts/code.jpg
-keywords: devlopr jekyll, how to use devlopr, devlopr, how to use devlopr-jekyll, devlopr-jekyll tutorial,best jekyll themes
-permalink: /blog/Day2
-usemathjax: true
----
-
----
 title: 안드로이드 버튼 추가하기 "
 author: seyoung
 date: '2022-01-01 00:19:00 +0800'
