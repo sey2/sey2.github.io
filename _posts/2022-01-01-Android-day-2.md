@@ -22,7 +22,7 @@ mermaid: true
 
 그 후 위의 이미지대로 클릭을 하여 버튼을 추가해주면 버튼이 생기게 됩니다.<br><br>
 
-## 버튼 클릭하면 메세지 창 나타나게 하기
+## 버튼 이벤트 처리 
 
 ```java
 public class MainActivity extends AppCompatActivity {
@@ -52,6 +52,60 @@ public class MainActivity extends AppCompatActivity {
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/54762273/147842855-6b961024-efa4-493f-b51a-e69006556850.gif) <br>
 
 위 과정을 문제 없이 잘 했다면 영상처럼 버튼을 클릭하면 메세지가 나타났다 사라지게 된다.
+
+# 여러개의 버튼 추가하기 
+
+위에 버튼을 추가 했던것 처럼 버튼을 추가한다 -> 왼쪽, 오른쪽, 위, 아래 동그라미 버튼이 생기는데, <br> <br>
+
+위에 있는 동그라미는 위의 버튼의 밑에 경계선과 연결하고, 밑에 있는 동그라미는 밑에 있는 바닥 경계선과 연결해 준다 <br><br>
+
+![12](https://user-images.githubusercontent.com/54762273/147842965-0b057cf1-a7aa-4a9f-99e1-a80f84121491.PNG)
+
+
+# 디자인 화면에서 단말 변경하기
+
+![12](https://user-images.githubusercontent.com/54762273/147843024-c239d79b-b9ef-47d3-b8b4-e50fa0e4e296.jpg)
+
+# 여러가지 버튼 이벤트 추가
+
+```java
+
+    public void onButton2Clicked(View v){
+        Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://m.naver.com"));
+        startActivity(myIntent);
+    }
+
+    public void onButton3Clicked(View v){
+        Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:010-9999-9999"));
+        startActivity(myIntent);
+    }
+
+```
+
+인텐트는 간단하게 안드로이드 플랫폼에게 원하는것을 말할 때 전달하는 우편물 같은것 이다. <br>
+예를 들어 '웹 페이지를 띄우고 싶어'라고 편지를 쓰면 안드로이드 단말은 그 편지를 <br>
+웹 브라우저에게 전달하면 웹 브라우저는 그 편지를 보고 내용에 맞게 웹 페이지를 띄어준다.
+
+
+
+소스파일을 추가해준 뒤 속성 창에서 onClick 속성 값으로 버튼에 맞는 함수를 넣어준다. <br>
+이렇게 하면 밑의 영상처럼 네이버로 연결, 전화 연결을 할 수 있게 된다.
+
+
+
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/54762273/147843100-d9e0a6da-f3b5-4026-acd4-9b198cd62468.gif)
+
+
+
+|android|기능|
+|:---:|:---:|
+|setContentView|화면에 무엇을 보여줄지 결정하는 메서드|
+|R.layout.acticity_main|배치 관리자|
+|Intent|어떤 기능을 실행할 것인지 지정할 때 사용|
+|Toast|화면에 잠깐 보였다 없어지는 메시지를 간단하게 보여주고 싶을때 사용 |
+
+
 
 
 
