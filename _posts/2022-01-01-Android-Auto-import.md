@@ -9,7 +9,7 @@ mermaid: true
 ---
 ## Android Studio Auto Imoprt 
 **File -> Settings -> Editor -> General -> Auto Import** 선택 <br><br>
-오른쪽 설정 화면에서 Add unambiguous imports on the fly와 Optimize imports on the fly 황목을 체크 후 OK 버튼 클릭.
+오른쪽 설정 화면에서 Add unambiguous imports on the fly와 Optimize imports on the fly 항목을 체크 후 OK 버튼 클릭.
 
 ![12](https://user-images.githubusercontent.com/54762273/147830911-bdcc6bd9-0197-47c7-8c7e-bde75f0f7db9.jpg)
 
