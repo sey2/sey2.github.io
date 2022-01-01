@@ -2,12 +2,13 @@
 title: "Load Map"
 date: '2022-01-02 08:22:00 +0800'
 categories: Android
-tags: [anroid,view,linear layout, layout]
+tags: [anroid,roadmap, ]
 mermaid: true
 ---
 이 블로그는 로드맵을 따라 학습한 내용을 기록하기 위해 개설 되었습니다. 
   
 블로그 방문 해주시는 분들 모두,
+
 더욱 성장하는 개발자가 되길 바라겠습니다.🙏🏻
   
   > 로드맵 이미지는 계속 최신화 하므로 이전과 다를 수 있습니다.
