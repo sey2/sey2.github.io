@@ -1,7 +1,7 @@
 ---
 title: 안드로이드 버튼 추가하기 "
 author: seyoung
-date: '2022-01-01 00:19:00 +0800'
+date: '2022-01-01 00:19:00 +0900'
 categories: Android
 tags: [andorid,buuton]
 math: true
