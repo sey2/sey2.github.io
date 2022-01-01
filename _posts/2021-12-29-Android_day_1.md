@@ -1,9 +1,7 @@
 ---
 title: Linear Layout"
-author: SeYoung
-  name: seyoung
-  link: https://github.com/sey2
-date: 2021-12-29 19:52:00 +0800
+author: seyoung
+date: '2021-12-29 19:52:00 +0800'
 categories: Anroid
 tags: [anroid,view,linear layout, layout]
 math: true
@@ -13,6 +11,9 @@ image:
   width: 800
   height: 500
 ---
+
+
+
 
 ## LinerLayout
 Liner Layout은 view를 수평 또는 수직 방향으로 배치할 수 있는 레이아웃이다. 
