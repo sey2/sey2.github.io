@@ -1,10 +1,14 @@
 ---
 title: "Load Map"
+author: seyoung
 date: '2022-01-02 08:22:00 +0800'
 categories: Android
-tags: [anroid,roadmap, ]
+tags: [android,roadmap]
+math: true
 mermaid: true
 ---
+
+
 이 블로그는 로드맵을 따라 학습한 내용을 기록하기 위해 개설 되었습니다. 
   
 블로그 방문 해주시는 분들 모두,
