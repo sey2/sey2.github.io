@@ -1,7 +1,7 @@
 ---
 title: "Android Auto Import"
 author: seyoung
-date: '2022-01-01 00:31:00 +0800'
+date: '2022-01-01 00:31:00 +0900'
 categories: Android
 tags: [andorid,import,auto]
 math: true
