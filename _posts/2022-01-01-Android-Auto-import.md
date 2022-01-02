@@ -2,7 +2,7 @@
 title: "Android Auto Import"
 author: seyoung
 date: '2022-01-01 00:31:00 +0900'
-categories: Android
+categories: Android Settings
 tags: [andorid,import,auto]
 math: true
 mermaid: true

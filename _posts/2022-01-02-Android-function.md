@@ -1,5 +1,5 @@
 ﻿---
-title: "단축키 및 기능"
+title: "Android Studio 단축키 및 기능"
 author: seyoung
 date: '2022-01-02 17:05:00 +0900'
 categories: Android Settings
@@ -16,6 +16,12 @@ mermaid: true
  > **소괄호 안에 들어갈 수 있는 피라미터를 알려준다.**
 
 ![1](https://user-images.githubusercontent.com/54762273/147869744-72b6868a-4dae-4b75-8906-3b986a45e942.PNG)
+
+**Ctrl + Shift + F**
+ > 프로젝트에 들어 있는 내용 중에서 어떤 글자를 검색하고 싶을 때 
+
+ ![캡처](https://user-images.githubusercontent.com/54762273/147869904-6956be7a-b0ed-4fc9-a9bf-dd12d00ad268.PNG)
+
 
 
 ## 코드 생성 기능
