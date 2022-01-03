@@ -2,7 +2,7 @@
 title: "Connet Decive to Studio"
 author: seyoung
 date: '2022-01-02 06:00:00 +0900'
-categories: Android
+categories: Android Settings
 tags: [device, setting, android]
 math: true
 mermaid: true
