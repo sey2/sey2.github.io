@@ -2,7 +2,7 @@
 title: "Load Map"
 author: seyoung
 date: '2022-01-02 08:22:00 +0900'
-categories: Android Stduy
+categories: Android Study
 tags: [android,roadmap]
 math: true
 mermaid: true
