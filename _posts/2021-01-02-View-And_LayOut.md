@@ -2,7 +2,7 @@
 title: "뷰와 레이아웃 "
 author: seyoung
 date: '2022-01-02 17:44:00 +0900'
-categories: Android Study
+categories: Android Layout
 tags: [android,view,layout]
 math: true
 mermaid: true

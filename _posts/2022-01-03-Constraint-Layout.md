@@ -2,7 +2,7 @@
 title: "제약 레이아웃(Constraint Layout)"
 author: seyoung
 date: '2022-01-03 18:49:00 +0900'
-categories: Android Study
+categories: Android Layout
 tags: [android,layout,constraint]
 math: true
 mermaid: true
@@ -38,8 +38,9 @@ mermaid: true
 
 버튼 왼쪽 동그라미가 연결선으로 부모 레이아웃의 왼쪽 벽면과 연결이 되어 있습니다. 
 
-이러한 상태를 부모 레이아웃이 타깃이 되어 연결점과 해당 타깃이(부모 레이아웃)
-연결 되었다고 보면 되겠습니다.
+이러한 상태를 부모 레이아웃이 타깃이 되어,<br>
+
+연결점과 해당 타깃이(부모 레이아웃) 연결 되었다고 보면 되겠습니다.
 
 버튼이 레이아웃 안에서 어디에 위치하고 있는지 결정하려면 적어도, 
 
@@ -92,7 +93,7 @@ mermaid: true
 
 ![1](https://user-images.githubusercontent.com/54762273/147918784-8ba9cf22-32da-4c1b-b8f2-76a6d64822a4.jpg)
 
-위 사진과 같이 자동으로 왼쪽과 오른쪽 모두 연결선이 만들어지게 됩니다.
+위 사진과 같이 자동으로 왼쪽과 오른쪽 모두 자동으로 연결선이 만들어지게 됩니다.
 
 **자석 모양이 비활성화가 되어 있다면 직접 연결선을 연결해 주어야 합니다.**
 
@@ -138,3 +139,7 @@ mermaid: true
 
  - 연결선이 직선으로 표시
  - Layout width 값과 Layout height 값은 지정한 값으로 설정됨
+
+<br><br>
+
+<a href="http://localhost:4000/posts/XML1/#%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4-xml-%EA%B8%B0%EC%B4%88">제약 레이아웃에서 사용한 xml 코드 분석 바로가기 </a>
