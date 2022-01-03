@@ -8,7 +8,7 @@ math: true
 mermaid: true
 ---
 
-## 제약 레이아웃 
+## 제약 레이아웃이란?
 
 안드로이드 스튜디오에서는 기본적인 레이아웃을
 
@@ -21,7 +21,7 @@ mermaid: true
 
 **제약조건(Constaint)을 사용한다는 것 입니다.**
 
-**제약 조건이란?**
+## 제약 조건이란?
    - 뷰가 레이아웃 안의 다른 요소와 어떻게 연결되는지 알려주는 것으로,
          뷰의 연결점과, 대상을 연결합니다. 
          
@@ -29,7 +29,7 @@ mermaid: true
    
    - Swift의 오토 레이아웃과 유사합니다.
 
-<img src = https://user-images.githubusercontent.com/54762273/147915336-77846214-044b-42ef-bf4c-8ea0f4a2b347.PNG height=400; width=400;>
+<img src = "https://user-images.githubusercontent.com/54762273/147915336-77846214-044b-42ef-bf4c-8ea0f4a2b347.PNG" height= 400 width=400>
 
 위의 사진을 보시면,
 
@@ -46,7 +46,7 @@ mermaid: true
 
 진행하면  버튼의 제약 조건이 완성되게 됩니다. 
 
-<img src = https://user-images.githubusercontent.com/54762273/147916419-a16174d2-fb46-4f53-b60b-eb4f2fada909.PNG height=400; width=400;>
+<img src = "https://user-images.githubusercontent.com/54762273/147916419-a16174d2-fb46-4f53-b60b-eb4f2fada909.PNG" height=400 width=400>
 
 제약 조건이 완성되면 위의 사진처럼 속성 창에 제약 조건이 표시 됩니다.
 
@@ -54,13 +54,13 @@ mermaid: true
 
 <br><br>
 
-**타깃이 될 수 있는것들**
+## 타깃이 될 수 있는것들
  - 같은 부모 레이아웃 안에 들어 있는 다른 뷰의 연결점
  - 부모 레이아웃의 연결점
  - 가이드 라인
 <br><br>
 
-**연결점이 될 수 있는것들**'
+## 연결점이 될 수 있는것들
 
  - 위쪽(Top), 아래쪽(Bottom), 왼쪽(Left), 오른쪽(Right)
  - 가로축의 가운데 (Center X), 세로축의 가운데 (Center Y)
