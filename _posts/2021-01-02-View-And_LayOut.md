@@ -94,6 +94,15 @@ ConstraintLayout는 안에 뷰를 위한 태그들이 들어가야 해서 시작
 
 ![1](https://user-images.githubusercontent.com/54762273/147871657-0ac7ff7e-bae5-420a-bdc5-6cf52f113792.jpg)
 
+----- 
+## 뷰 영역 
+
+**Margin: 테두리 바깥쪽 공간**
+
+**Padding: 테두리 안쪽 공간**
+
+<img width="609" alt="1" src="https://user-images.githubusercontent.com/54762273/148038652-dec3e69c-e977-44a6-945c-60c542ea3e6d.png">
+
 
 
 
