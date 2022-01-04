@@ -133,7 +133,7 @@ layout_gravity는 뷰의 layout_width나 layout_height 속성을 wrap_content로
 
 gravity 속성은 뷰의 위치가 아니라 뷰 안에 들어 있는 내용물의 위치를 결정하는 것이다. 
 
-gravity는 | 연산자를 이용해 여러 개의 값을 같이 설정할 수 있다.
+gravity는 ㅣ 연산자를 이용해 여러 개의 값을 같이 설정할 수 있다.
 
 **주의할 점은 ㅣ 연산자 양쪽에 공백이 없어야 한다.**
 
