@@ -42,9 +42,7 @@ mermaid: true
 > <a  href="https://sey2.github.io/posts/TabeleLayout/">테이블 레이아웃 </a>
 
 
-## 스크롤 만들어보기
-
-**스크롤 뷰란?** 
+## 스크롤 뷰란?
  하나의 뷰나 뷰 그룹을 넣을 수 있고 어떤 뷰의 내용물이 넘치면 스크롤을
  만들 수 있게 도와준다.
 
