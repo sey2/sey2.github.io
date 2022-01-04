@@ -54,6 +54,8 @@ mermaid: true
 |layout_centerHorizontal |부모 컨테이너의 수평 방향 중앙에 배치함  |
 |layout_centerVertical  |부모 컨테이너의 수직 방향 중앙에 배치함  |
 |layout_centerlnParent |부모 컨테이너의 수평과 수직 방향 중앙에 배치함 |
+
+
 ---
 
 **다른 뷰와의 상대적 위치를 이용해 뷰를 배치할 수 있는 속성**
