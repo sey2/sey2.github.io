@@ -39,7 +39,7 @@ mermaid: true
 
 ### 테이블 레이아웃
 
-> <a  href="https://sey2.github.io/posts/TabeleLayout/">테이블 레이아웃 </a>
+> <a  href="https://sey2.github.io/posts/TableLayout/">테이블 레이아웃 </a>
 
 
 ## 스크롤 뷰란?
