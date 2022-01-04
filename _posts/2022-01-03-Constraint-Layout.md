@@ -142,4 +142,4 @@ mermaid: true
 
 <br><br>
 
-<a href="http://localhost:4000/posts/XML1/#%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4-xml-%EA%B8%B0%EC%B4%88">제약 레이아웃에서 사용한 xml 코드 분석 바로가기 </a>
+<a href="https://sey2.github.io/posts/XML1/">제약 레이아웃에서 사용한 xml 코드 분석 바로가기 </a>
