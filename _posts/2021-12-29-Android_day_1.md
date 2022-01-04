@@ -92,3 +92,57 @@ Common Attributes에서 oriantation 지정
 **wrap_content로 바꾸게 되면 버튼 세개가 다시 생기게 된다.** 
 
 ![6](https://user-images.githubusercontent.com/54762273/148042313-f0e131d2-60ba-45d0-8ee3-5fd329415876.PNG)
+
+
+
+
+
+### Linearlayout 자바 코드 
+
+**Main Activity 코드를 복사후 같은 폴더에 소스 코드 복붙 후 아래 자바 코드 작성** 
+
+```java
+public class LayoutCodeActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        LinearLayout mainLayout = new LinearLayout(this); // Linear 레이아웃 객체 생성
+        mainLayout.setOrientation(LinearLayout.VERTICAL);   // 방향 설정
+        
+        /* new 연산자로 레이아웃 안에 추가될 뷰들에 설정할 피라미터 생성  */
+        LinearLayout.LayoutParams params =
+                new LinearLayout.LayoutParams(
+                        LinearLayout.LayoutParams.MATCH_PARENT,
+                        LinearLayout.LayoutParams.WRAP_CONTENT
+                );
+    
+        /* 버튼 생성 및 설정하고 레이아웃에 추가 */
+        Button button1 = new Button(this);  // 여기서 this는 Context 객체 
+        button1.setText("Button1");
+        button1.setLayoutParams(params);
+        mainLayout.addView(button1);
+        setContentView(mainLayout); // 새로 만든 레이아웃을 화면에 설정
+    }
+}
+```
+> Context란?
+> 일반적으로 어떤 일이 발생한 상황을 의미하는 말인데, 프로그래밍 언어에서는 객체의 정보를
+> 담고 있는 객체를 의미하는 경우가 많다. 안드로이드는 UI 구성 요소인 뷰에 대한 정보를 손쉽게
+> 확인하거나 설정할 수 있도록 뷰의 생성자에 Context 객체를 전달한다.
+
+**그 후 프로젝트 탐색창 -> app -> src -> main -> res -> AndroidManifest.xml -> 아래 코드로 수정**
+ 
+``` xml 
+   <activity
+            android:name=".LayoutCodeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+```

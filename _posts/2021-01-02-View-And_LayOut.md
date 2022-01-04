@@ -104,6 +104,42 @@ ConstraintLayout는 안에 뷰를 위한 태그들이 들어가야 해서 시작
 <img width="609" alt="1" src="https://user-images.githubusercontent.com/54762273/148038652-dec3e69c-e977-44a6-945c-60c542ea3e6d.png">
 
 
+## 뷰 정렬하기 
+
+|정렬 속성| 설명 |
+|:--:|:--:|
+|layout_gravity|부모의 여유 공간에 뷰가 모두 채워지지 않아 여유 공간이 생겼을 때 <br> 여유 공간안에서 뷰를 정렬함|
+|gravity|뷰 안에 표시하는 내용물을 정렬함|
+
+
+### layout_gravity
+layout_gravity는 뷰의 layout_width나 layout_height 속성을 wrap_content로 만든 후에 같이 사용할 수 있다. 
+
+예를 들어, 세로 방향으로 설정된 리니어 레이아웃에 추가된 버튼들의 layout 속성을 warp_content로 하면
+
+각각의 버튼들은 한 줄에 한 개씩 추가되면서 글자가 보이는 만큼만 가로 공간을 차지하므로
+
+나머지 가로 공간은 여유 공간으로 남게 된다. 
+
+이렇게 여유 공간이 있을 때는 안드로이드는 일반적으로 왼쪽 정렬을 하게 되는데 layout_gravity 속성을 직접
+
+설정하면 왼쪽,중앙 또는 오른쪽 정렬 도 할 수 있다. 
+
+![6](https://user-images.githubusercontent.com/54762273/148054940-ec6ae29e-bc35-47f3-9ce8-919cb41b2636.jpg)
+
+
+
+### gravity
+
+gravity 속성은 뷰의 위치가 아니라 뷰 안에 들어 있는 내용물의 위치를 결정하는 것이다. 
+
+gravity는 | 연산자를 이용해 여러 개의 값을 같이 설정할 수 있다.
+
+**주의할 점은 ㅣ 연산자 양쪽에 공백이 없어야 한다.**
+
+![6](https://user-images.githubusercontent.com/54762273/148056532-3758f892-373f-470c-8e3b-f4af93e3811a.jpg)
+
+
 
 
 
