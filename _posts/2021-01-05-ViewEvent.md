@@ -24,7 +24,7 @@ mermaid: true
 
 ----
 
-### Listener를 구현하는 방법
+## Listener를 구현하는 방법
 
  1. XML에서 속성을 정의하고 메소드를 호출하는 방법
  2. 익명클래스를 이용하는 방법
@@ -107,6 +107,6 @@ public  class  MainActivity  extends  AppCompatActivity  implements  View.OnClic
 @Override  
 public  void  onClick(View v) { 
 	TextView textView = findViewById(R.id.txtName); 	
-	textVew.setText("클릭되었습니다."); '
+	textVew.setText("클릭되었습니다."); 
 }  
 ```

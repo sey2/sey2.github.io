@@ -147,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
 
 ```
 
-
+> **invalidate()는 draw를 다시 하도록 요청하고 requestLayout()은 measure를 통한 사이즈 체크부터 다시 시작한다.**
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/54762273/148219043-152b4c82-4c20-4076-b848-c0a3fe1f308a.gif)
 
