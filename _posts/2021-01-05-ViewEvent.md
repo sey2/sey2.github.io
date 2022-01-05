@@ -1,7 +1,7 @@
 ---
 title: "View Listener 구현 방법"
 date: '2022-01-05 21:58:00 +0900'
-categories: Android Layout
+categories: Android Layout_And_View
 tags: [anroid,view,event,listener]
 mermaid: true
 ---
