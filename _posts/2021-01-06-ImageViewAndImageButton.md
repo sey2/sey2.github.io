@@ -1,7 +1,7 @@
 ---
 title: "상대 레이아웃"
 author: seyoung
-date: '2022-01-04 18:07:00 +0900'
+date: '2022-01-06 12:32:00 +0900'
 categories: Android Layout_And_View
 tags: [android,layout,imgae,button]
 math: true

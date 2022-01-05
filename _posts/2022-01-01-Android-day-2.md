@@ -106,10 +106,6 @@ public class MainActivity extends AppCompatActivity {
 |Toast|화면에 잠깐 보였다 없어지는 메시지를 간단하게 보여주고 싶을때 사용 |
 
 
-
-
-
-
-
+--- 
 
 
