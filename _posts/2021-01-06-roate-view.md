@@ -1,5 +1,5 @@
 ---
-title: "Roate View Event"
+title: "Rotate View Event"
 author: seyoung
 date: '2022-01-06 22:05:00 +0900'
 categories: Android Event View
