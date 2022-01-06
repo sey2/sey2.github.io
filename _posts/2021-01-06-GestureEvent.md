@@ -8,6 +8,17 @@ math: true
 mermaid: true
 ---
 
+## 제스처 이벤트 처리하기 
+
+제스처 이벤트는 터치 이벤트 중에서 스크롤 등을 구별한 후 알려주는 이벤트이다.
+
+제스처 이벤트를 처리해주는 클래스는 **GestureDetector**이며, 
+
+객체를 만들고 터치 이벤트를 전달하면 GestureDectector 객체에서 각 상황에 맞는 메소드를 호출한다.
+
+### 제스처 이벤트 만들기
+
+
 ```java
 public class MainActivity extends AppCompatActivity {
     TextView textView;
