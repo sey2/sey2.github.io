@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
 |android|기능|
 |:---:|:---:|
 |setContentView|화면에 무엇을 보여줄지 결정하는 메서드|
-|R.layout.acticity_main|배치 관리자|
+|R.layout.acticity_main|res/layout/activity_main_xml 파일|
 |Intent|어떤 기능을 실행할 것인지 지정할 때 사용|
 |Toast|화면에 잠깐 보였다 없어지는 메시지를 간단하게 보여주고 싶을때 사용 |
 
