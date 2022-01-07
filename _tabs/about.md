@@ -11,11 +11,11 @@ order: 4
 </p>
 
 <p>
-  👋&nbsp; Hi there! I'm <b>mobile app develope Student </b> using Android  🚀<br/>
+  😛&nbsp; Hi there! I'm <b>mobile app develope Student </b> using Android  🚀<br/>
   I hope to develop every beautiful things. ✨ <br/><br/>
 </p>
 
-### 💪 Skills
+### 😺 Skills
 #### Platforms & Languages
 <p>
 <a>  <img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=Android&logoColor=white"/></a>
