@@ -90,9 +90,12 @@ getSystemService(Context.LAYOUT_INFLATER_SERVICE)
 ![1](https://user-images.githubusercontent.com/54762273/148522730-e4dddb9e-46d4-4e7a-a934-d525d8db35e4.jpg)
 
 **MenuActivity 생성**
+
 ![1](https://user-images.githubusercontent.com/54762273/148522896-05bb11b4-f9ec-40cc-9477-840fb60a5c39.PNG)
 
+
 이렇게 하면 activity_menu 클래스와 xml 파일이 만들어진다.  
+
 
 그 후 menu xml 을 아래와 같이 수정한다.
 
