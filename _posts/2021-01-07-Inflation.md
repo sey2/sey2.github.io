@@ -51,7 +51,9 @@ XML 레이아웃 파일에 Button 태그를 정의해도 앱은 자신이 실행
 
 setOnClickListener 메서드를 호출하는 코드를 입력해 보았다.
 
+
 ![1](https://user-images.githubusercontent.com/54762273/148520301-37497101-be4c-4ef7-8880-efd494a874bc.PNG)
+
 
 이렇게 하면 위와 같이 앱이 실행되지 않고 오류를 발생한다. 
 
@@ -222,5 +224,6 @@ public class MenuActivity extends AppCompatActivity {
 ```
 
 **결과**
+  
 
 ![1](https://user-images.githubusercontent.com/54762273/148527598-e006ac25-f360-498f-ae05-37bbe2865bbd.PNG)
