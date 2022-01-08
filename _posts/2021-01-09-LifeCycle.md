@@ -1,9 +1,9 @@
 ---
-title: "생명 주기, 상태 메소드"
+title: "Activity Life Cycle"
 author: seyoung
-date: '2022-01-07 22:14:00 +0900'
+date: '2022-01-09 00:20:00 +0900'
 categories: Android OS 
-tags: [android,sharedpreferences,lifecycle ]
+tags: [android,fragment ]
 math: true
 mermaid: true
 ---

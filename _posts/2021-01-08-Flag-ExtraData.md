@@ -95,9 +95,9 @@ mermaid: true
 
 데이터를 전달하는 것이 불가능할 수도 있다.
 
-따라서 **기본적으로 액티비티를 띄울 때 전달되는 인텐트 안에 부가 데이터(Extra data)를 넣어 전달하는** 
+따라서 **기본적으로 액티비티를 띄울 때 전달되는 인텐트 안에**
 
-**방법을 권장한다.**
+**부가 데이터(Extra data)를 넣어 전달하는 방법을 권장한다.**
 
 인텐트 안에는 번들(Bundle) 객체가 들어 있는데, 번들 객체는 해시테이블과 유사해서 
 
@@ -245,7 +245,10 @@ public class MenuActivity extends AppCompatActivity {
 ```
 ---
 
-**결과** 
+
+**결과**
+
+
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/54762273/148561904-5cc19e5f-cba5-4995-81f6-7e1b61950a97.gif)
 
 
