@@ -2,7 +2,7 @@
 title: "액티비티 중복문제, 인텐트 객체 전달"
 author: seyoung
 date: '2022-01-07 22:14:00 +0900'
-categories: Android Event Layout_And_View 
+categories: Android Activity 
 tags: [android,flag, extradata,parcelable ]
 math: true
 mermaid: true
