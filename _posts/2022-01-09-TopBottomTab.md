@@ -1,8 +1,8 @@
 ---
 title: "상단 탭 하단 탭 만들기"
 author: seyoung
-date: '2022-01-09 19:41:00 +0900'
-categories: Android  Layout_And_View
+date: '2022-01-09 22:51:00 +0900'
+categories: Android Layout_And_View
 tags: [android,view]
 math: true
 mermaid: true
