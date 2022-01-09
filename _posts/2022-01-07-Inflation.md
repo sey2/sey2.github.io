@@ -2,7 +2,7 @@
 title: "Infaltion, Infalator"
 author: seyoung
 date: '2022-01-07 19:05:00 +0900'
-categories: Android Layout_And_View 
+categories: Android XML
 tags: [android,progressbar,bar,snakbar,toast,dialog]
 math: true
 mermaid: true
