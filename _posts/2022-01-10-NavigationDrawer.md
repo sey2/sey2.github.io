@@ -1,5 +1,5 @@
 ---
-title: "Navigation Bar"
+title: "Navigation Drawer"
 author: seyoung
 date: '2022-01-10 03:17:00 +0900'
 categories: Android Navigation 
