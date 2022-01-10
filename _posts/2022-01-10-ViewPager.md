@@ -2,7 +2,7 @@
 title: "뷰 페이저"
 author: seyoung
 date: '2022-01-10 02:04:00 +0900'
-categories: Android Layout_And_View 
+categories: Android Navigation
 tags: [android,viewpager]
 math: true
 mermaid: true
