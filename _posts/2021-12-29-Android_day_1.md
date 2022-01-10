@@ -1,7 +1,7 @@
 ---
 title: "Linear Layout"
 date: '2021-12-29 19:52:00 +0900'
-categories: Android Layout_And_View
+categories: Android User_Interface
 tags: [anroid,view,linear layout, layout]
 mermaid: true
 ---

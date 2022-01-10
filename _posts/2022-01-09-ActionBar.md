@@ -2,7 +2,7 @@
 title: "Action Bar"
 author: seyoung
 date: '2022-01-09 20:57:00 +0900'
-categories: Android Layout_And_View
+categories: Android User_Interface
 tags: [android,fragment ]
 math: true
 mermaid: true
