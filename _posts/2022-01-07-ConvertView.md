@@ -2,7 +2,7 @@
 title: "화면간 전환하기"
 author: seyoung
 date: '2022-01-07 20:20:00 +0900'
-categories: Android Activity
+categories: Android AppComponents
 tags: [android,intent,activity]
 math: true
 mermaid: true

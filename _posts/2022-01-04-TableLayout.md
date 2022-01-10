@@ -2,7 +2,7 @@
 title: "테이블 레이아웃"
 author: seyoung
 date: '2022-01-04 18:23:00 +0900'
-categories: Android Layout_And_View 
+categories: Android User_Interface
 tags: [android,layout,tablelayout]
 math: true
 mermaid: true

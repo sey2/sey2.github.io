@@ -2,7 +2,7 @@
 title: "안드로이드 레이아웃 종류 "
 author: seyoung
 date: '2022-01-04 17:48:00 +0900'
-categories: Android Layout_And_View 
+categories: Android User_Interface
 tags: [android,layout]
 math: true
 mermaid: true

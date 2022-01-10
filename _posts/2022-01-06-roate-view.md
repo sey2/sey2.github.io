@@ -2,7 +2,7 @@
 title: "Rotate View Event"
 author: seyoung
 date: '2022-01-06 22:05:00 +0900'
-categories: Android Event View
+categories: Android Event
 tags: [android,event,key]
 math: true
 mermaid: true

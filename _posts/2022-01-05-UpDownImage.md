@@ -1,7 +1,7 @@
 ---
 title: "두개의 이미지 뷰에 이미지 번갈아 보여주기"
 date: '2022-01-05 09:44:00 +0900'
-categories: Android Layout_And_View
+categories: Android User_Interface
 tags: [anroid,view,scroll,layout]
 mermaid: true
 ---

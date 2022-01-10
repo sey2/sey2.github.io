@@ -2,7 +2,7 @@
 title: "이미지뷰와 이미지 버튼"
 author: seyoung
 date: '2022-01-06 12:32:00 +0900'
-categories: Android Layout_And_View
+categories: Android User_Interface
 tags: [android,layout,imgae,button]
 math: true
 mermaid: true

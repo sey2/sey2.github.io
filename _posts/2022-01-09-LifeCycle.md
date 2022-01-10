@@ -2,7 +2,7 @@
 title: "Activity Life Cycle"
 author: seyoung
 date: '2022-01-09 00:20:00 +0900'
-categories: Android Activity 
+categories: Android AppComponents
 tags: [android,fragment ]
 math: true
 mermaid: true

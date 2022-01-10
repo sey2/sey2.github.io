@@ -2,7 +2,7 @@
 title: "제약 레이아웃(Constraint Layout)"
 author: seyoung
 date: '2022-01-03 18:49:00 +0900'
-categories: Android Layout_And_View
+categories: Android User_Interface
 tags: [android,layout,constraint]
 math: true
 mermaid: true

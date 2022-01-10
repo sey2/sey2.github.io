@@ -2,7 +2,7 @@
 title: "프래그먼트로 화면 만들기"
 author: seyoung
 date: '2022-01-09 19:41:00 +0900'
-categories: Android Fragment 
+categories: Android Navigation
 tags: [android,fragment ]
 math: true
 mermaid: true
