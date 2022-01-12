@@ -2,7 +2,7 @@
 title: "NinePatch Image"
 author: seyoung
 date: '2022-01-12 18:54:00 +0900'
-categories: Android study
+categories: Android Study
 tags: [android,ninepatch image]
 math: true
 mermaid: true
