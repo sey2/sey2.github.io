@@ -2,7 +2,7 @@
 title: "Broad Cast Receiver"
 author: seyoung
 date: '2022-01-11 12:50:00 +0900'
-categories: Android AppComponets
+categories: Android AppComponents
 tags: [android,viewpager]
 math: true
 mermaid: true

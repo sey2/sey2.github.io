@@ -2,7 +2,7 @@
 title: "Dangerous Permission"
 author: seyoung
 date: '2022-01-11 02:27:00 +0900'
-categories: Android AppComponets
+categories: Android AppComponents
 tags: [android,viewpager]
 math: true
 mermaid: true
