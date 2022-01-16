@@ -3,7 +3,7 @@ title: "Adapter Pattern"
 author: seyoung
 date: '2022-01-17 01:10:00 +0900'
 categories: Java Design_Pattern
-tags: [android,layout]
+tags: [android,adapter]
 math: true
 mermaid: true
 ---
