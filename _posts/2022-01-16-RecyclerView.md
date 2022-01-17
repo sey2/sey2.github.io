@@ -289,3 +289,189 @@ RecyclerView가 보이는 모양은 레이아웃 매니저를 통해 결정이 �
 ![1](https://user-images.githubusercontent.com/54762273/149759379-b0e2025d-a1a9-4dac-b949-d229622b386c.PNG)
 
 
+---
+
+## 뷰홀더 안에서의 클릭 이벤트를 처리
+
+어댑터 객체 밖에서 리스너를 설정하고 설정된 리스너 쪽으로 이벤트를 전달 받기 위해 인터페이스를 정의한다.
+
+
+**OnPersonItemClickListener**
+
+```java
+public interface OnPersonItemClickListener {
+    public void onItemClick(PersonAdapter.ViewHolder holder, View view,int position);
+}
+```
+position 정보는 몇 번째 아이템인지를 구분할 수 있는 인덱스 값이다.
+
+인제 위의 인터페이스를 사용할 수 있도록 ViewHolder 클래스를 수정한다.
+
+<br>
+
+**PersonAdapter.java**
+
+```java
+  static class ViewHolder extends RecyclerView.ViewHolder{
+        TextView textView;
+        TextView textView2;
+
+        public ViewHolder(View itemView, final OnPersonItemClickListener listener){
+            // 뷰홀더 생성자로 전달되는 뷰 객체 참조하기
+            super(itemView);
+
+            // 뷰 객체에 들어 있는 텍스트 뷰 참조하기
+            textView = itemView.findViewById(R.id.textView);
+            textView2 = itemView.findViewById(R.id.textView2);
+
+            // 아이템 뷰에 onClickListener 설정
+            itemView.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View view){
+                    int position = getAdapterPosition();
+
+                    // 아이템 뷰 클릭시 미리 정의한 다른 리스너의 메서드 호출하기
+                    if(listener!=null)
+                        listener.onItemClick(ViewHolder.this,view, position);
+                }
+            });
+
+        }
+
+        public void setItem(Person item){
+            textView.setText(item.getName());
+            textView2.setText(item.getMobile());
+        }
+    }
+```
+
+뷰 홀더 객체의 생성자가 호출될 때 리스너 객체가 파라미터로 전달된다.
+
+이렇게 전달된 리스너 객체의 onItemClick 이벤트는 뷰가 클릭되었을 때 호출된다.
+
+인제 PersonAdapter 코드를 수정해보자.
+
+<br>
+
+**PersonAdapter.java**
+
+```java
+public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.ViewHolder>
+                                                        implements OnPersonItemClickListener{
+    ArrayList<Person> items = new ArrayList<Person>();
+    OnPersonItemClickListener listener;
+
+    @NonNull
+    @Override
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
+        LayoutInflater inflater = LayoutInflater.from(viewGroup.getContext());
+        // 인플레이션을 통해 뷰 객체를 만들기
+        View itemView = inflater.inflate(R.layout.person_item, viewGroup, false);
+
+        // 뷰홀더 객체를 생성하면서 뷰 객체를 전달하고 그 뷰홀더 객체를 반환하기
+        return new ViewHolder(itemView,this);
+    }
+
+    /* 외부에서 리스너를 설정할 수 있도록 메서드 추가 */
+    public void setOnItemClickListener(OnPersonItemClickListener listener){
+        this.listener = listener;
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull ViewHolder viewHolder, int position) {
+        Person item = items.get(position);
+        viewHolder.setItem(item);
+    }
+
+    @Override
+    public int getItemCount() {
+        return items.size();
+    }
+
+    public void addItem(Person item){
+        items.add(item);
+    }
+
+    public void setItem(ArrayList<Person> items){
+        this.items = items;
+    }
+
+    public Person getItem(int position){
+        return items.get(position);
+    }
+
+    public void setItem(int position, Person item){
+        items.set(position, item);
+    }
+
+    @Override
+    public void onItemClick(ViewHolder holder, View view, int position) {
+        if(listener != null)
+            listener.onItemClick(holder, view, position);
+    }
+	...
+```
+
+`OnPersonItemClickListener`를 implements해서 필요 메서드를 구현해준다.
+
+`onItemClick` 메서드를 구현 해주었는데 이 메서드는 뷰홀더 클래스 안에서 뷰가 클릭되었을 때 호출되는 
+메서드이다. 
+
+하지만 이 어댑터 클래스 안에서가 아니라 밖에서 이벤트 처리를 하는 것이 일반적이므로 listener라는 이름의
+
+변수를 하나 선언하고 `setOnItemClickListener` 메서드를 추가하여 이 메서드가 호출되었을 때 리스너 객체를
+
+변수에 할당하도록 한다. 이렇게하면 `onItemClick` 메서드가 호출되었을 때 다시 외부에서 설정된 메서드가 
+
+호출되도록 만들 수 있다.  인제 MainActivity.java 파일을 수정해서 어댑터에 리스너 객체를 설정해보자.
+
+<br>
+
+**MainActivity.java**
+
+```java
+public class MainActivity extends AppCompatActivity {
+    RecyclerView recyclerView;
+    PersonAdapter adapter;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        recyclerView = findViewById(R.id.recyclerView);
+
+        GridLayoutManager layoutManager = new GridLayoutManager(this,2);
+        recyclerView.setLayoutManager(layoutManager);
+
+        adapter = new PersonAdapter();
+
+        adapter.addItem(new Person("김민수","010-1000-1000"));
+        adapter.addItem(new Person("김하늘","010-2000-2000"));
+        adapter.addItem(new Person("홍길동","010-3000-3000"));
+        adapter.addItem(new Person("테스트","010-5000-3000"));
+        adapter.addItem(new Person("이지롱","010-5400-3000"));
+
+        // 리싸이클러뷰에 어댑터 설정하기
+        recyclerView.setAdapter(adapter);
+
+		// 어댑터에 리스너 설정하기
+        adapter.setOnItemClickListener(new OnPersonItemClickListener() {
+            @Override
+            public void onItemClick(PersonAdapter.ViewHolder holder, View view, int position) {
+                Person item = adapter.getItem(position);
+                Toast.makeText(getApplicationContext(),"아이템 선택됨: " +  item.getName(),Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+}
+```
+
+---
+
+**결과**
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/54762273/149788640-04d25d3f-f45e-4c99-b988-eb76385dc331.gif)
+
+
+
