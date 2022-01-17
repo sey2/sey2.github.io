@@ -260,3 +260,32 @@ LinearLayoutManager 객체를 통해 방향을 VERTICAL로 설정하여 세로 �
 
 ![1](https://user-images.githubusercontent.com/54762273/149662702-ba3042a6-cda1-4b11-ae8d-c81781f838c8.PNG)
 
+---
+
+## 격자모양 RecyclerView
+
+위에서 만든 List모양 RecyclerView에서 조금만 바꾸어 주면 된다.
+
+RecyclerView가 보이는 모양은 레이아웃 매니저를 통해 결정이 되므로 MainActivity.java 파일을  수정한다.
+
+**MainActivity.java**
+
+```java
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        RecyclerView recyclerView = findViewById(R.id.recyclerView);
+
+        GridLayoutManager layoutManager =
+                new GridLayoutManager(this,2);
+                ...
+        }
+```
+
+이렇게 수정해 주고 Person 객체를 추가 해주면 아래와 같이 격자모양  RecyclerView가 생성된다.
+
+![1](https://user-images.githubusercontent.com/54762273/149759379-b0e2025d-a1a9-4dac-b949-d229622b386c.PNG)
+
+
