@@ -147,3 +147,59 @@ public static Animation loadAnimation(Context context, int id)
 **결과**
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/54762273/149967750-98bae45c-395d-4549-994b-6f9f7f0b58ea.gif)
+
+---
+
+## 화면이 사용자에게 보이는 시점에 애니메이션 시작하는 방법
+
+화면이 사용자에게 보이자마자 애니메이션을 시작하고 싶다면 애니메이션 시작점은
+
+`onWindowFocusChanged` 메서드가 호출되는 시점, 즉 윈도우가 포커스를 받는 시점이어야 한다.
+
+`onWindowFocusChanged` 메서드 내에서 파라미터로 전달되는 `hasFocus` 변수의 값이 true일 경우에
+
+각각의 애니메이션 객체에 대해 `start` 메서드를 호출함으로써 애니메이션이 시작되도록 하면 된다.
+
+윈도우가 다른 윈도우에 의해 가려지거나 할 때는 hasFocus 값이 false가 되므로 애니메이션 객체의
+
+rest 메서드를 호출하여 초기 상태로 되돌릴 수 있다.
+
+**MainActivity.java**
+
+```java
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus){
+        super.onWindowFocusChanged(hasFocus);
+        Button button = findViewById(R.id.button);
+
+        Animation anim =
+                AnimationUtils.loadAnimation(getApplicationContext(), R.anim.scale);
+
+        if(hasFocus == true) 
+            button.startAnimation(anim);
+        else if(hasFocus == false)
+            anim.reset();
+
+    }
+}
+```
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/54762273/149981950-25906eca-14de-4383-a1c4-d49452915d74.gif)
+
+
+위 처럼 어플을 키자마자 애니메이션이 작동한다.
+
+|메서드 |설명  |
+|:--:|:--:|
+|public void onAnimationStart(Animation animation) | 애니메이션이 시작되기 전에 호출된다. |
+|public void onAnimationEnd(Animation animation)| 애니메이션이 끝났을 때 호출된다.|
+|public void onAnimationRepeat(Animation animation)| 애니메이션이 반복될 때 호출된다.| 
+

@@ -39,7 +39,10 @@ mermaid: true
 ---
 
 **결과**
+
+
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/54762273/149971518-bd105bf4-9f8d-4ad5-b08c-ee62adc93046.gif)
+
 
 ---
 
@@ -72,6 +75,7 @@ mermaid: true
 ---
 
 **결과**
+
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/54762273/149973760-4b22ecf9-8c85-462e-830d-7c0e4bf81b1f.gif)
 
 ---
