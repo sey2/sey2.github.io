@@ -7,7 +7,6 @@ tags: [android,animation,tweend]
 math: true
 mermaid: true
 ---
-
 ## Tweened Animation
 
 안드로이드는 애니메이션을 간편하게 적용할 수 있는 여러가지 방법을 제공한다.
@@ -41,3 +40,108 @@ mermaid: true
 | 효과  | 회전| Rotate로 정의한 액션은 대상을 회전 시키는데 사용되는 효과이다.
 |효과| 투명도 | Alpha로 정의한 액션은 대상의 투명도를 조절하는데 사용되는 효과이다. |
 
+<br>
+
+트윈 애니메이션의 액션(Action) 정보는 XML 리소스로 정의하거나 소스 코드에서 직접 객체로 만들 수 있다.
+
+**XML 리소스로 정의할 때는 /app/res/anim 폴더의 밑에 확장자를 xml로 해야한다.**
+
+이렇게 하면 애니메이션 액션 정의는 빌드할 때 컴파일 되어 설치 파일에 포함된다. 
+
+---
+### 애니메이션 적용해보기 
+
+애니메이션 액션 정보를 만들기 위해 /app/res 폴더안에 admin 폴더를 생성한다.
+
+
+![1](https://user-images.githubusercontent.com/54762273/149960066-5d836a0a-f9f8-446d-b98c-fe08df6893e1.PNG)
+
+폴더안에 scale.xml 파일을 만든 후 아래와 같이 대상을 두배로 확대하는 스케일 액션을 정의하자.
+
+
+**scale.xml**
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <scale
+        android:duration="2500"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
+        android:toXScale="2.0"
+        android:toYScale="2.0"
+        />
+    
+    <scale
+        android:startOffset="2500"
+        android:duration="2500"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
+        android:toXScale="0.5"
+        android:toYScale="0.5"
+
+        />
+</set>
+```
+시작 시간은 `startOffset`이고 지정하지 않으면 애니메이션은 바로 시작한다.
+
+`duration`은 애니메이션이 지속되는 시간이고 단위는 ms이다.
+
+scale 태그는 대상을 확대하거나 축소할 때 사용되는데, 크기를 변경하려는 축의 정보는
+
+X축과 Y축에 대해 `pivotX`와`pivotY`로 지정한다.
+
+`fromXScale`과`fromYScale`은 시작할 때의 확대/축소 비율이고, `toXScale`과`toYScale`은 
+
+끝날 때의 확대/축소 비율이다. 여기서는 1.0으로 시작하여 2.0으로 끝나므로 원래 크기에서 2배
+
+크기로 확대되는 애니메이션이 작동한다.
+
+그 후 버튼을 추가 한 후 아래와 같이 애니메이션을 적용 시키는 코드를 작성하자.
+<br>
+
+**MainActivity.java**
+
+```java
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        Button button = findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                // 라소스에 정의한 애니메이션 액션 로딩
+                Animation anim =
+                        AnimationUtils.loadAnimation(getApplicationContext(), R.anim.scale);
+                // 뷰의 애니메이션 시작
+                view.startAnimation(anim);
+            }
+        });
+    }
+}
+```
+
+XML 리소스에 정의된 애니메이션 액션 정보를 로딩하기 위해 `AnimationUtils` 클래스의 `loadAnimation` 
+메서드를 사용한다.
+
+`loadAnimation` 메서드는 아래와 같은 형태이다.
+
+```java
+public static Animation loadAnimation(Context context, int id)
+```
+
+두번째 매개 변수 id는 XML 리소스에 정의된 애니메이션 액션의 id 값이다.
+
+---
+
+**결과**
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/54762273/149967750-98bae45c-395d-4549-994b-6f9f7f0b58ea.gif)
