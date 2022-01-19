@@ -197,6 +197,9 @@ public class MainActivity extends AppCompatActivity {
 
 위 처럼 어플을 키자마자 애니메이션이 작동한다.
 
+
+**Animation Listener**
+
 |메서드 |설명  |
 |:--:|:--:|
 |public void onAnimationStart(Animation animation) | 애니메이션이 시작되기 전에 호출된다. |
