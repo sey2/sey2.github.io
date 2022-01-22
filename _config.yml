@@ -174,3 +174,8 @@ jekyll-archives:
     tag: /tags/:name/
     category: /categories/:name/
 
+gems:
+  - jekyll-feed
+
+plugins:
+  - jekyll-sitemap
