@@ -1,7 +1,7 @@
 ---
 title: "Handler 지연 시간 (postDelayed) "
 author: seyoung
-date: '2022-01-22 22:44:00 +0900'
+date: '2022-01-22 20:44:00 +0900'
 categories: Android Thread
 tags: [android,thread,handler,runnable,postdelayed]
 math: true
