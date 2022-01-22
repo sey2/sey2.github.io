@@ -2,7 +2,7 @@
 title: "쓰레드로 여러 이미지 번갈아 보여주기"
 author: seyoung
 date: '2022-01-22 22:19:00 +0900'
-categories: Android Thread
+categories: Android Thread Android Animation
 tags: [android,thread,handler,animation]
 math: true
 mermaid: true
