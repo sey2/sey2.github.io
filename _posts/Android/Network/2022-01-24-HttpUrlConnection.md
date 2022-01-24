@@ -1,3 +1,13 @@
+---
+title: "HttpURLConnection"
+author: seyoung
+date: '2022-01-24 11:20:00 +0900'
+categories: Android Network
+tags: [android,network,http,url]
+math: true
+mermaid: true
+---
+
 ##  HttpURLConnection으로 웹 서버 통신하기
 
 안드로이드 어플리케이션이 서버와 통신하기 위한 방법에는 **HTTP통신과 Socket 통신 2가지가 있다.**
@@ -22,17 +32,17 @@
 
 HTTP로 웹 서버에 접속하는 방법도 소켓의 경우와 마찬가지로 표준 자바 방식을 그대로 사용할 수 있다.
 
-자바에서 HTTP 클라이언트를 만드는 가장 간단한 방법은 **URL 객체를 만들고 openConnection 메서드를 호출하여**
+자바에서 HTTP 클라이언트를 만드는 가장 간단한 방법은 **URL 객체를 만들고 openConnection**
 
-**HttpURLConnection 객체를 만드는 것이다.**
+**메서드를 호출하여 HttpURLConnection 객체를 만드는 것이다.**
 
 ```java
 public URLConnection openConnection()
 ```
 
-URL 객체에 들어 있는 문자열이 "http://"를 포함하면 HTTP 연결을 위한 객체를 만들게 되므로 openConnection 메서드가
+URL 객체에 들어 있는 문자열이 "http://"를 포함하면 HTTP 연결을 위한 객체를 만들게 되므로 openConnection
 
-반환하는 URLConnection 객체를 HttpURLConnectoin으로 형 변환하여 사용할 수 있다.
+메서드가 반환하는 URLConnection 객체를 HttpURLConnectoin으로 형 변환하여 사용할 수 있다.
 
 **HttpURLConnection에는 POST와 GET 2가지 방식이 존재한다.**
 
