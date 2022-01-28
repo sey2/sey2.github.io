@@ -1,7 +1,7 @@
 ---
 title: "Content Provider"
 date: '2022-01-27 17:24:00 +0900'
-categories: Android Database
+categories: Android Database AppComponents
 tags: [anroid,database, contentprovider]
 mermaid: true
 --- 
@@ -9,6 +9,8 @@ mermaid: true
 ## Content Provider
 
 **Content Provider**는 내용 제공자라고 부르며, 한 앱에서 관리하는 데이터를 다른 앱에서 접근할 수 있도록 해준다.
+
+쉽게 말해서 응용 프로그램끼리 데이터를 공유하는 유일한 방법이다.
 
 내용 제공자도 앱 구성요소이기 때문에 시스템에서 관리하며 매니페스트 파일에 등록해야 사용할 수 있다.
 
@@ -430,6 +432,8 @@ Uri insert(Uri uri,
 ```
 첫 번째 파라미터는 URI이고 두번째 파라미터는 저장할 칼럼명과 값들이 들어간 ContentValues 객체이다.
 
+ContentValues는 ContentResolver가 사용하는 데이터 운송 수단이다.
+
 결과 값으로는 새로 추가된 값의 Uri 정보가 반환된다.
 
 <br>
@@ -462,6 +466,12 @@ int delete(Uri uri,
 
 
 getType메서드는 MIME 타입이 무엇인지를 알고 싶을 때 사용한다.
+
+MIME 타입이란 Multipurpose Internet Mail Extension의 약자로, 파일 변환을 위한 포맷이다.
+
+MIME은 이메일에 첨부된 파일을 텍스트 문자 형태로 변환해서 이메일과 함께 전송하기 위해 개발된 포맷이다.
+
+
 
 <br>
 
@@ -515,3 +525,12 @@ getType메서드는 MIME 타입이 무엇인지를 알고 싶을 때 사용한�
 <img width="390" alt="스크린샷 2022-01-28 오후 4 45 38" src="https://user-images.githubusercontent.com/54762273/151507929-818feaa9-463b-4949-a27b-6dc1a92f5673.png">
 
 여기에서는 내용 제공자를 정의한 앱에서 데이터를 추가하고 조회했지만 다른 앱에서도 내용 제공자를 이용하면 이 앱에서 관리하는 데이터를 조회할 수 있게 된다.
+
+---
+
+### 정리
+
+### Content Resolver
+
+폰 안에 여러 앱, 여러 프로바이더가 있기 때문에 이들을 관리하고 흐름을 통제. 앱이 접근하고자 하는 프로바이더 사이에서 중개자 역할.
+query(읽기), insert, update, delete 작업이 가능.
