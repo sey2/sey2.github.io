@@ -1,5 +1,5 @@
 ---
-title: "로어블 객체로 만들어 그리기"
+title: "드로어블 객체로 만들어 그리기"
 author: seyoung
 date: '2022-01-30 21:54:00 +0900'
 categories: Android User_Interface
