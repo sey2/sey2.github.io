@@ -3,7 +3,7 @@ title: "동영상 재생하기"
 author: seyoung
 date: '2022-02-02 20:30:00 +0900'
 categories: Android Multimedia
-tags: [android,video ]
+tags: [android,video]
 math: true
 mermaid: true
 ---
