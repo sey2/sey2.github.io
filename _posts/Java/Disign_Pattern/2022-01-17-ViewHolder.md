@@ -10,7 +10,7 @@ mermaid: true
 
 ## ViewHolder Pattern
 
-RecyclerView를 공부하던 중 ViewHolder 개념이 자주 나오는데 dt
+RecyclerView를 공부하던 중 ViewHolder 개념이 자주 나오는데
 
 그에 대한 설명이 책에 없어서 따로 정리하고자 글을 쓴다.
 
