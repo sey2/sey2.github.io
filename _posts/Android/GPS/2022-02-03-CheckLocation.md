@@ -8,7 +8,8 @@ math: true
 mermaid: true
 --- 
  
- ## GPS로 나의 위치 확인하기
+## GPS로 나의 위치 확인하기
+
 
 앱에서 내 위치를 확인하고 싶다면 위치 관리자 (LocationManager)를 사용한다.
 
