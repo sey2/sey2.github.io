@@ -38,5 +38,3 @@ order: 4
 
 
 <img src="https://ghchart.rshah.org/219138/sey2"/>
-
-### 깃 커밋 현황
