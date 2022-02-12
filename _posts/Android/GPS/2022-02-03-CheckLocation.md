@@ -1,5 +1,5 @@
 ---
-title: "카메라로 사진 찍어 저장하기"
+title: "GPS로 내 위치 확인하기 "
 author: seyoung
 date: '2022-02-03 15:58:00 +0900'
 categories: Android GPS
