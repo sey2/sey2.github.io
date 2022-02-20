@@ -319,3 +319,69 @@ public class MainActivity extends AppCompatActivity {
 
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/54762273/148684900-6087b938-16ca-4f33-ac71-3bab06405ef1.gif)
+
+
+---
+
+### 하단 탭 커스텀
+
+**res/drawable/custom_buttom.xml**
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid
+        android:color="@color/white"/>
+    <corners
+        android:topRightRadius="20dp"
+        android:topLeftRadius="20dp"/>
+    <stroke
+        android:color="#F5F5F5"
+        android:width="1dp"/>
+</shape>
+```
+
+
+**activity.xml**
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/base_bg">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bottom"
+        app:itemIconTint="@color/black"
+        app:itemPaddingTop="20dp"
+        app:itemTextColor="@drawable/item_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/menu_bottom" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+```
+
+![1](https://user-images.githubusercontent.com/54762273/154865152-c8e4d490-accd-46a0-929a-85be611b1015.PNG)
+
+
+참고 : href=" https://stackoverflow.com/questions/64234753/is-there-a-way-to-add-rounded-corners-to-an-android-material-view-bottom-navigat
+
+https://onlyfor-me-blog.tistory.com/425
