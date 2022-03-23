@@ -2,7 +2,7 @@
 title: "운동 일지 1"
 author: seyoung
 date: '2022-03-23 13:57:00 +0900'
-categories: Android 
+categories: 운동
 tags: []
 math: true
 mermaid: true
