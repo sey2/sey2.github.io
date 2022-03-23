@@ -1,8 +1,8 @@
 ---
 title: "운동 일지 1"
 author: seyoung
-date: '2022-03-23 13:57:00 +0900'
-categories: 운동
+date: '2022-03-23 19:48:00 +0900'
+categories: Daily
 tags: []
 math: true
 mermaid: true
