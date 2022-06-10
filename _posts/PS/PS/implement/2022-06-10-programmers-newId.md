@@ -3,7 +3,7 @@ title: "프로그래머스 카카오 프렌즈 컬러링 북"
 author: seyoung
 date: '2022-06-09 23:35:23 +0900'
 categories: PS DFS-BFS
-tags: [programmers,DFS,BFS,level2]
+tags: [programmers,DFS,BFS,level1]
 math: true
 mermaid: true
 ---
