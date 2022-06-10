@@ -1,9 +1,9 @@
 ---
-title: "프로그래머스 카카오 프렌즈 컬러링 북"
+title: "프로그래머스 신규 아이디 추천"
 author: seyoung
 date: '2022-06-10 18:01:23 +0900'
 categories: PS DFS-BFS
-tags: [programmers,DFS,BFS,level1]
+tags: [programmers,implements,level1]
 math: true
 mermaid: true
 ---
