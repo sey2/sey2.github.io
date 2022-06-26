@@ -45,8 +45,6 @@ class Solution {
                     list.set(idx-2,list.get(idx-2)*2);
                 list.set(idx-1,list.get(idx-1)*2);
             }else if(c == '#'){ list.set(idx-1,-list.get(idx-1)); }
-
-
         }
 
         for(int num : list)
