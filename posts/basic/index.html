@@ -1,0 +1,191 @@
+<!DOCTYPE html><html lang="en" mode="dark" ><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="day-prompt" content="days ago"><meta name="hour-prompt" content="hours ago"><meta name="minute-prompt" content="minutes ago"><meta name="justnow-prompt" content="just now"><meta name="generator" content="Jekyll v4.3.2" /><meta property="og:title" content="코틀린 기본 문법 정리" /><meta name="author" content="seyoung" /><meta property="og:locale" content="en" /><meta name="description" content="코틀린 기본 문법" /><meta property="og:description" content="코틀린 기본 문법" /><link rel="canonical" href="https://sey2.github.io/posts/basic/" /><meta property="og:url" content="https://sey2.github.io/posts/basic/" /><meta property="og:site_name" content="Se Young" /><meta property="og:type" content="article" /><meta property="article:published_time" content="2022-02-17T17:36:00+09:00" /><meta name="twitter:card" content="summary" /><meta property="twitter:title" content="코틀린 기본 문법 정리" /><meta name="twitter:site" content="@" /><meta name="twitter:creator" content="@seyoung" /><meta name="google-site-verification" content="google_meta_tag_verification" /> <script type="application/ld+json"> {"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"seyoung"},"dateModified":"2022-02-18T00:08:18+09:00","datePublished":"2022-02-17T17:36:00+09:00","description":"코틀린 기본 문법","headline":"코틀린 기본 문법 정리","mainEntityOfPage":{"@type":"WebPage","@id":"https://sey2.github.io/posts/basic/"},"url":"https://sey2.github.io/posts/basic/"}</script><title>코틀린 기본 문법 정리 | Se Young</title><link rel="apple-touch-icon" sizes="200x200" href="/assets/img/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="42x42" href="/assets/img/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="26x26" href="/assets/img/favicons/favicon-16x16.png"><link rel="manifest" href="/assets/img/favicons/site.webmanifest"><link rel="shortcut icon" href="/assets/img/favicons/favicon.ico"><meta name="apple-mobile-web-app-title" content="Se Young"><meta name="application-name" content="Se Young"><meta name="msapplication-TileColor" content="#da532c"><meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml"><meta name="theme-color" content="#ffffff"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"><link rel="dns-prefetch" href="https://fonts.gstatic.com"><link rel="preconnect" href="https://www.google-analytics.com" crossorigin="use-credentials"><link rel="dns-prefetch" href="https://www.google-analytics.com"><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="anonymous"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="preconnect" href="https://cdn.jsdelivr.net"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"><link rel="stylesheet" href="/assets/css/style.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css"> <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script><body data-spy="scroll" data-target="#toc"><div id="sidebar" class="d-flex flex-column align-items-end" lang="en"><div class="profile-wrapper text-center"><div id="avatar"> <a href="/" alt="avatar" class="mx-auto"> <img src="/assets/img/profile.png" alt="avatar" onerror="this.style.display='none'"> </a></div><div class="site-title mt-3"> <a href="/">Se Young</a></div><div class="site-subtitle font-italic">CS, Android, etc .. diary</div></div><ul class="w-100"><li class="nav-item"> <a href="/" class="nav-link"> <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i> <span>HOME</span> </a><li class="nav-item"> <a href="/categories/" class="nav-link"> <i class="fa-fw fas fa-stream ml-xl-3 mr-xl-3 unloaded"></i> <span>CATEGORIES</span> </a><li class="nav-item"> <a href="/tags/" class="nav-link"> <i class="fa-fw fas fa-tag ml-xl-3 mr-xl-3 unloaded"></i> <span>TAGS</span> </a><li class="nav-item"> <a href="/archives/" class="nav-link"> <i class="fa-fw fas fa-archive ml-xl-3 mr-xl-3 unloaded"></i> <span>ARCHIVES</span> </a><li class="nav-item"> <a href="/about/" class="nav-link"> <i class="fa-fw fas fa-info-circle ml-xl-3 mr-xl-3 unloaded"></i> <span>ABOUT</span> </a></ul><div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center"> <a href="https://github.com/sey2" aria-label="github" target="_blank" rel="noopener"> <i class="fab fa-github"></i> </a> <a href="https://twitter.com/" aria-label="twitter" target="_blank" rel="noopener"> <i class="fab fa-twitter"></i> </a> <a href=" javascript:location.href = 'mailto:' + ['casio2978','naver.com'].join('@')" aria-label="email" > <i class="fas fa-envelope"></i> </a> <a href="/feed.xml" aria-label="rss" > <i class="fas fa-rss"></i> </a></div></div><div id="topbar-wrapper" class="row justify-content-center topbar-down"><div id="topbar" class="col-11 d-flex h-100 align-items-center justify-content-between"> <span id="breadcrumb"> <span> <a href="/"> Home </a> </span> <span>코틀린 기본 문법 정리</span> </span> <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i><div id="topbar-title"> Post</div><i id="search-trigger" class="fas fa-search fa-fw"></i> <span id="search-wrapper" class="align-items-center"> <i class="fas fa-search fa-fw"></i> <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off" placeholder="Search..."> <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i> </span> <span id="search-cancel" >Cancel</span></div></div><div id="main-wrapper"><div id="main"><div class="row"><div id="core-wrapper" class="col-12 col-lg-11 col-xl-8"><div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4"><h1 data-toc-skip>코틀린 기본 문법 정리</h1><div class="post-meta text-muted"><div> By <em> <a href="https://instagram.com/casio2978">Se Young Park</a> </em></div><div class="d-flex"><div> <span> Posted <em class="timeago" date="2022-02-17 17:36:00 +0900" data-toggle="tooltip" data-placement="bottom" title="Thu, Feb 17, 2022, 5:36 PM +0900" >Feb 17, 2022</em> </span> <span> Updated <em class="timeago" date="2022-02-18 00:08:18 +0900 " data-toggle="tooltip" data-placement="bottom" title="Fri, Feb 18, 2022, 12:08 AM +0900" >Feb 18, 2022</em> </span> <span class="readtime" data-toggle="tooltip" data-placement="bottom" title="893 words"> <em>4 min</em> read</span></div></div></div><div class="post-content"><h2 id="코틀린-기본-문법">코틀린 기본 문법<a href="#코틀린-기본-문법" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2><h3 id="reference-by---kotlin-공식-문서-">reference by <a href="https://kotlinlang.org/docs/reference/basic-syntax.html"> Kotlin 공식 문서 </a><a href="#reference-by---kotlin-공식-문서-" class="anchor"><i class="fas fa-hashtag"></i></a></h3></h3><h3 id="kotlin-구조">Kotlin 구조<a href="#kotlin-구조" class="anchor"><i class="fas fa-hashtag"></i></a></h3></h3><div class="language-kotlin highlighter-rouge"><div class="code-header"> <span label-text="Kotlin"><i class="fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre><td class="rouge-code"><pre>
+<span class="k">package</span> <span class="nn">kotlinproject</span>
+
+<span class="k">fun</span> <span class="nf">main</span><span class="p">(){</span>
+
+<span class="nf">println</span><span class="p">(</span><span class="s">"Hello World"</span><span class="p">)</span>
+
+<span class="p">}</span>
+
+</pre></table></code></div></div><ul><li><p><strong>.kt 확장자를 가진다.</strong></p><li><p><strong>package, import 선언부는 자바와 동일</strong></p><li><p><strong>함수의 fun 키워드로 시작한다.</strong></p><li><p><strong>리턴 타입은 함수명() 뒤쪽에 명시</strong></p><li><p><strong>코틀린은 문장의 끝을 세미콜론으로 명시하지 않음</strong></p></ul><p><br /></p><h2 id="변수-타입-정의-및-초기화">변수 타입, 정의 및 초기화<a href="#변수-타입-정의-및-초기화" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2><ul><li><p><strong>데이터 타입에 관계 없는 상수는 <code class="language-plaintext highlighter-rouge">val</code>, 변수는 <code class="language-plaintext highlighter-rouge">var</code> 로 선언</strong></p><li><p><strong>데이터 타입을 명시하지 않아도 할당 해주는 값에 따라 자동으로 결정됨</strong></p></ul><p><img width="465" alt="스크린샷 2022-02-17 오후 5 32 28" data-src="https://user-images.githubusercontent.com/54762273/154436530-a3ebf785-6f33-4542-a309-a2a463a0c04b.png" data-proofer-ignore/></p><p><code class="language-plaintext highlighter-rouge">val</code>는 자바와 <code class="language-plaintext highlighter-rouge">final</code>과 같으므로 다른 값으로 재 할당할 경우 위와 같이 오류가 난다. <br /></p><p><img data-src="https://user-images.githubusercontent.com/54762273/154494943-fa1d9344-ad3d-4020-9f03-bc9708caefc7.PNG" alt="1" data-proofer-ignore/></p><p>위의 경우는 <code class="language-plaintext highlighter-rouge">var</code> 키워드로 num 변수를 int 형으로 타입을 정하였는데,</p><p>아래에서 String으로 타입을 재할당 시도를 하여서 컴파일 오류가 나는 경우</p><hr /><h3 id="변수-정의">변수 정의<a href="#변수-정의" class="anchor"><i class="fas fa-hashtag"></i></a></h3></h3><p><strong>코틀린에서 변수를 선언할 때 초기화를 하지 않고 정의만 할 경우 아래와 같이 타입을 명시해줘야 함</strong></p><p><img data-src="https://user-images.githubusercontent.com/54762273/154495917-5a3acde3-790a-46e4-b32a-07b7568c9464.PNG" alt="1" data-proofer-ignore/></p><hr /><h3 id="변수-초기화">변수 초기화<a href="#변수-초기화" class="anchor"><i class="fas fa-hashtag"></i></a></h3></h3><p><strong>초기화는 아래와 같이 타입에 맞는 값을 할당해주면 된다</strong></p><p><img data-src="https://user-images.githubusercontent.com/54762273/154496617-d4d8d951-4e61-469e-ac00-9bf7a88aec32.PNG" alt="1" data-proofer-ignore/></p><p><br /></p><h2 id="함수-정의">함수 정의<a href="#함수-정의" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2><p><strong>두 개의 Int 타입 파라미터를 전달 받아 Int 타입을 반환하는 함수</strong></p><div class="language-kotlin highlighter-rouge"><div class="code-header"> <span label-text="Kotlin"><i class="fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre><td class="rouge-code"><pre>
+<span class="k">fun</span> <span class="nf">sum</span> <span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nc">Int</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nc">Int</span><span class="p">)</span> <span class="p">:</span> <span class="nc">Int</span><span class="p">{</span>  
+    <span class="k">return</span> <span class="n">a</span><span class="p">+</span><span class="n">b</span>  
+<span class="p">}</span>
+
+</pre></table></code></div></div><p><br /></p><p><strong>직접 값을 할당해주는 함수</strong></p><div class="language-kotlin highlighter-rouge"><div class="code-header"> <span label-text="Kotlin"><i class="fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre><td class="rouge-code"><pre>
+<span class="k">fun</span> <span class="nf">sum</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nc">Int</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nc">Int</span><span class="p">)</span> <span class="p">=</span> <span class="n">a</span> <span class="p">+</span> <span class="n">b</span>  
+  
+<span class="k">fun</span> <span class="nf">main</span><span class="p">(){</span>  
+  <span class="kd">var</span> <span class="py">a</span> <span class="p">=</span> <span class="mi">10</span>  
+  <span class="kd">var</span> <span class="py">b</span> <span class="p">=</span> <span class="mi">20</span>  
+  
+  <span class="nf">println</span><span class="p">(</span><span class="nf">sum</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">))</span>     
+<span class="p">}</span>
+
+</pre></table></code></div></div><p><br /></p><p><strong>리턴 값이 없는 함수는 Unit (자바의 void)으로 정의</strong></p><div class="language-kotlin highlighter-rouge"><div class="code-header"> <span label-text="Kotlin"><i class="fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre><td class="rouge-code"><pre>
+<span class="k">fun</span> <span class="nf">print</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nc">Int</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nc">Int</span><span class="p">):</span> <span class="nc">Unit</span><span class="p">{</span>  
+    <span class="nf">println</span><span class="p">(</span><span class="s">"$a + $b = ${a+b}"</span><span class="p">)</span>  
+<span class="p">}</span>  
+  
+<span class="k">fun</span> <span class="nf">main</span><span class="p">(){</span>  
+  <span class="kd">var</span> <span class="py">a</span> <span class="p">=</span> <span class="mi">10</span>  
+  <span class="kd">var</span> <span class="py">b</span> <span class="p">=</span> <span class="mi">20</span>  
+  
+  <span class="nf">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>  
+<span class="p">}</span>
+
+</pre></table></code></div></div><p><br /></p><p><strong>Unit 리턴 타입은 생략 가능</strong></p><div class="language-kotlin highlighter-rouge"><div class="code-header"> <span label-text="Kotlin"><i class="fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre><td class="rouge-code"><pre>
+<span class="k">fun</span> <span class="nf">print</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nc">Int</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nc">Int</span><span class="p">){</span>  
+    <span class="nf">println</span><span class="p">(</span><span class="s">"$a + $b = ${a+b}"</span><span class="p">)</span>  
+<span class="p">}</span>    
+
+</pre></table></code></div></div><p><br /></p><h2 id="스트링-템플릿">스트링 템플릿<a href="#스트링-템플릿" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2><p><strong>자바에서 String 클래스가 가지고 있는 format 메서드와 유사한 기능을 한다.</strong></p><div class="language-kotlin highlighter-rouge"><div class="code-header"> <span label-text="Kotlin"><i class="fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre><td class="rouge-code"><pre>
+<span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>  
+  <span class="kd">var</span> <span class="py">a</span> <span class="p">=</span> <span class="mi">1</span>  
+  <span class="kd">val</span> <span class="py">str1</span> <span class="p">=</span> <span class="s">"a is $a"</span>  
+  
+  <span class="n">a</span> <span class="p">=</span> <span class="mi">2</span>  
+  <span class="kd">var</span> <span class="py">str2</span> <span class="p">=</span> <span class="s">"${str1.replace("</span><span class="k">is</span><span class="s">", "</span><span class="n">was</span><span class="s">")}, but now is $a"</span>  
+  
+  <span class="nf">println</span><span class="p">(</span><span class="n">str1</span><span class="p">)</span>  
+  <span class="nf">println</span><span class="p">(</span><span class="n">str2</span><span class="p">)</span>  
+<span class="p">}</span> 
+
+</pre></table></code></div></div><p><br /></p><h2 id="조건문">조건문<a href="#조건문" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2><p><strong>조건문 사용법은 자바와 동일</strong></p><div class="language-kotlin highlighter-rouge"><div class="code-header"> <span label-text="Kotlin"><i class="fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre>
+<span class="k">fun</span> <span class="nf">max</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nc">Int</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nc">Int</span><span class="p">):</span> <span class="nc">Int</span><span class="p">{</span>  
+    <span class="k">if</span><span class="p">(</span><span class="n">a</span> <span class="p">&gt;</span> <span class="n">b</span><span class="p">)</span>  
+        <span class="k">return</span> <span class="n">a</span>  
+   <span class="k">else</span>  
+        <span class="k">return</span> <span class="n">b</span>  
+<span class="p">}</span>
+
+</pre></table></code></div></div><p><strong>하지만 코틀린에서는 아래와 같이 표현식으로 나타낼 수 있음</strong></p><div class="language-kotlin highlighter-rouge"><div class="code-header"> <span label-text="Kotlin"><i class="fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre><td class="rouge-code"><pre>
+<span class="k">fun</span> <span class="nf">max</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nc">Int</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nc">Int</span><span class="p">)</span> <span class="p">=</span> <span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="p">&gt;</span> <span class="n">b</span><span class="p">)</span> <span class="n">a</span> <span class="k">else</span> <span class="n">b</span>
+
+</pre></table></code></div></div><p><br /></p><h2 id="null">NULL<a href="#null" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2><p><strong>Null값을 허용하는 경우 타입 뒤에 ? 를 명시해주면 된다.</strong></p><div class="language-kotlin highlighter-rouge"><div class="code-header"> <span label-text="Kotlin"><i class="fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre><td class="rouge-code"><pre>
+<span class="k">fun</span> <span class="nf">parseInt</span><span class="p">(</span><span class="n">str</span> <span class="p">:</span><span class="nc">String</span><span class="p">)</span> <span class="p">:</span> <span class="nc">Int</span><span class="p">?</span> <span class="p">{</span>  
+    <span class="k">return</span> <span class="n">str</span><span class="p">.</span><span class="nf">toInt</span><span class="p">()</span>      <span class="c1">// 리턴 타입이 기본적으로 Int형이고, null일 수 도 있음 </span>
+<span class="p">}</span>
+
+</pre></table></code></div></div><p><br /></p><h2 id="자동-형-변환">자동 형 변환<a href="#자동-형-변환" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2><p><img data-src="https://user-images.githubusercontent.com/54762273/154501290-22e923f4-833a-4f71-9d5a-5fbf3d9c78c9.PNG" alt="1" data-proofer-ignore/></p><p><br /></p><p><strong>반대의 경우</strong></p><p><img data-src="https://user-images.githubusercontent.com/54762273/154501971-672d3431-3cb6-48e0-8853-d59830d11f68.PNG" alt="1" data-proofer-ignore/></p><p><br /></p><h2 id="반복문">반복문<a href="#반복문" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2><p><strong>for-each문</strong></p><p><img data-src="https://user-images.githubusercontent.com/54762273/154502500-67660308-2fb0-40a5-8b4c-db688ab42928.PNG" alt="1" data-proofer-ignore/></p><p><br /></p><p><strong>인덱스를 사용하는 경우</strong></p><p><img data-src="https://user-images.githubusercontent.com/54762273/154503073-563f7876-023e-4b21-9b98-552a57bfe159.PNG" alt="1" data-proofer-ignore/></p><p><strong>While문</strong></p><p><img data-src="https://user-images.githubusercontent.com/54762273/154503518-574fc05e-9ef2-41a7-9266-045cae5141de.PNG" alt="1" data-proofer-ignore/></p><p><br /></p><h2 id="when-표현식">When 표현식<a href="#when-표현식" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2><p><strong>when 표현식은 자바의 switch 문과 유사하다</strong></p><p><img data-src="https://user-images.githubusercontent.com/54762273/154504264-6e222428-8548-444a-a835-d12a5f410c8c.PNG" alt="1" data-proofer-ignore/></p><p><br /></p><h2 id="range">Range<a href="#range" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2><div class="language-kotlin highlighter-rouge"><div class="code-header"> <span label-text="Kotlin"><i class="fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre><td class="rouge-code"><pre>
+<span class="c1">// Java  </span>
+<span class="k">for</span><span class="p">(</span><span class="n">int</span> <span class="n">i</span><span class="p">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="p">&lt;</span><span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="p">++){</span>  
+  <span class="o">..</span><span class="p">.</span>  
+<span class="p">}</span>  
+  
+<span class="c1">// Kotlin  </span>
+<span class="k">for</span><span class="p">(</span><span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..</span><span class="n">x</span><span class="p">){</span> 	<span class="c1">//0부터 1씩 증가하면서 x보다 작거나 같을 때까지 </span>
+    <span class="o">..</span><span class="p">.</span>  
+<span class="p">}</span>
+
+</pre></table></code></div></div><p><br /></p><div class="language-kotlin highlighter-rouge"><div class="code-header"> <span label-text="Kotlin"><i class="fas fa-code small"></i></span> <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre><td class="rouge-code"><pre>
+<span class="c1">// Java  </span>
+<span class="k">for</span><span class="p">(</span><span class="n">int</span> <span class="n">i</span><span class="p">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="p">&lt;</span><span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="p">+=</span><span class="mi">2</span><span class="p">){</span>  
+  <span class="o">..</span><span class="p">.</span>  
+<span class="p">}</span>  
+  
+<span class="c1">// Kotlin  </span>
+<span class="k">for</span><span class="p">(</span><span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..</span> <span class="mi">9</span> <span class="n">step</span> <span class="mi">2</span><span class="p">){</span>  		<span class="c1">// 0 ~ 9까지 2씩 증가</span>
+    <span class="o">..</span><span class="p">.</span>  
+<span class="p">}</span>  
+  
+<span class="k">for</span><span class="p">(</span><span class="n">i</span> <span class="k">in</span> <span class="mi">9</span> <span class="n">downTo</span> <span class="mi">0</span> <span class="n">step</span> <span class="mi">2</span><span class="p">){</span>  	<span class="c1">// 9 ~ 0까지 2씩 다운</span>
+      
+<span class="p">}</span>
+
+</pre></table></code></div></div><p><br /></p><p><strong>인덱스가 특정 범위를 벗어 났는지 확인하려면 아래와 같이 ! 연산자를 in과 함께 사용</strong></p><p><img data-src="https://user-images.githubusercontent.com/54762273/154506349-dcd7a7bc-06b2-417e-8152-25f4a624659a.PNG" alt="1" data-proofer-ignore/></p></div><div class="post-tail-wrapper text-muted"><div class="post-meta mb-3"> <i class="far fa-folder-open fa-fw mr-1"></i> <a href='/categories/kotlin/'>Kotlin</a>, <a href='/categories/basic/'>basic</a></div><div class="post-tags"> <i class="fa fa-tags fa-fw mr-1"></i> <a href="/tags/kotlin/" class="post-tag no-text-decoration" >kotlin</a></div><div class="post-tail-bottom d-flex justify-content-between align-items-center mt-3 pt-5 pb-2"><div class="license-wrapper"> This post is licensed under <a href="https://creativecommons.org/licenses/by/4.0/"> CC BY 4.0 </a> by the author.</div><div class="share-wrapper"> <span class="share-label text-muted mr-1">Share</span> <span class="share-icons"> <a href="https://twitter.com/intent/tweet?text=코틀린 기본 문법 정리 - Se Young&url=https://sey2.github.io/posts/basic/" data-toggle="tooltip" data-placement="top" title="Twitter" target="_blank" rel="noopener" aria-label="Twitter"> <i class="fa-fw fab fa-twitter"></i> </a> <a href="https://www.facebook.com/sharer/sharer.php?title=코틀린 기본 문법 정리 - Se Young&u=https://sey2.github.io/posts/basic/" data-toggle="tooltip" data-placement="top" title="Facebook" target="_blank" rel="noopener" aria-label="Facebook"> <i class="fa-fw fab fa-facebook-square"></i> </a> <a href="https://telegram.me/share?text=코틀린 기본 문법 정리 - Se Young&url=https://sey2.github.io/posts/basic/" data-toggle="tooltip" data-placement="top" title="Telegram" target="_blank" rel="noopener" aria-label="Telegram"> <i class="fa-fw fab fa-telegram"></i> </a> <i id="copy-link" class="fa-fw fas fa-link small" data-toggle="tooltip" data-placement="top" title="Copy link" title-succeed="Link copied successfully!"> </i> </span></div></div></div><script src="https://utteranc.es/client.js" repo="sey2/sey2.github.io" issue-term="pathname" theme="github-dark" crossorigin="anonymous" async> </script></div></div><div id="panel-wrapper" class="col-xl-3 pl-2 text-muted topbar-down"><div class="access"><div id="access-lastmod" class="post"><div class="panel-heading">Recent Update</div><ul class="post-content pl-0 pb-1 ml-1 mt-2"><li><a href="/posts/basic4/">코틀린 기본 문법 (함수)</a><li><a href="/posts/back-13565/">백준 침투</a><li><a href="/posts/back-18352/">특정 거리의 도시 찾기 (18352)</a><li><a href="/posts/programmers-exam/">프로그래머스 모의고사</a><li><a href="/posts/programmers-rotto/">프로그래머스 로또의 최고 순위와 최저 순위</a></ul></div></div><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script><div id="toc-wrapper" class="pl-0 pr-4 mb-5"><div class="panel-heading pl-3 pt-2 mb-2">Contents</div><nav id="toc" data-toggle="toc"></nav></div></div></div><div class="row"><div class="col-12 col-lg-11 col-xl-8"><div id="tail-wrapper" class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4"><div id="related-posts" class="mt-5 mb-2 mb-sm-4"><h3 class="pt-2 mt-1 mb-4 ml-1" data-toc-skip>Further Reading</h3><div class="card-deck mb-4"><div class="card"> <a href="/posts/basic2/"><div class="card-body"> <em class="timeago small" date="2022-03-05 00:29:00 +0900" >Mar 5, 2022</em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>코틀린 기본 문법 정리 (?:, ?., as?, !!, lateinit)</h3><div class="text-muted small"><p> 기본 문법2 (?:, ?., as?, !!, lateinit) 엘비스 ?: 연산자 1 2 3 4 5 6 7 8 fun main(args: Array&amp;lt;String&amp;gt;){ var fishFood : Int? = null fishFood = fishFood?.dec() ?: 0 println(fishFood) } ...</p></div></div></a></div><div class="card"> <a href="/posts/basic3/"><div class="card-body"> <em class="timeago small" date="2022-03-07 18:21:00 +0900" >Mar 7, 2022</em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>코틀린 기본 문법 정리 List</h3><div class="text-muted small"><p> ### 불변형 List 생성하기 1 2 3 4 5 6 7 8 9 10 11 12 13 fun main(array: Array&amp;lt;String&amp;gt;){ var numbers: List&amp;lt;Int&amp;gt; = listOf(1,2,3,4,5) var names: List&amp;lt;String&amp;gt; = listOf(&quot;one&quot;,&quot;two&quot;,&quot;t...</p></div></div></a></div><div class="card"> <a href="/posts/basic4/"><div class="card-body"> <em class="timeago small" date="2022-03-08 17:06:00 +0900" >Mar 8, 2022</em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>코틀린 기본 문법 (함수)</h3><div class="text-muted small"><p> fun 1 2 3 fun double(x: Int): Int{ return 2 * x } 함수 정의는 fun 키워드를 사용한다. 함수 사용 1 val result = double(2) 함수 호출 1 Stream().read() 함수 파라미터는 Pascal notation 을 써서 정의한다. 각 파라미터는 type ...</p></div></div></a></div></div></div><div class="post-navigation d-flex justify-content-between"> <a href="/posts/back-17215/" class="btn btn-outline-primary" prompt="Older"><p>볼링 점수 계산 (17215)</p></a> <a href="/posts/BackgroundXML/" class="btn btn-outline-primary" prompt="Newer"><p>안드로이드 xml 배경 적용하다 삽질한 건에 대하여</p></a></div></div></div></div><footer class="d-flex w-100 justify-content-center"><div class="d-flex justify-content-between align-items-center text-muted"><div class="footer-left"><p class="mb-0"> © 2023 <a href="https://instagram.com/casio2978">Se Young Park</a>. <span data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">Some rights reserved.</span></p></div><div class="footer-right"><p class="mb-0"> Powered by <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> with <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a> theme.</p></div></div></footer></div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded"><div class="col-12 col-sm-11 post-content"><div id="search-hints"><div id="access-tags"><div class="panel-heading">Trending Tags</div><div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/android/">android</a> <a class="post-tag" href="/tags/backjoon/">backjoon</a> <a class="post-tag" href="/tags/layout/">layout</a> <a class="post-tag" href="/tags/bfs/">BFS</a> <a class="post-tag" href="/tags/dfs/">DFS</a> <a class="post-tag" href="/tags/programmers/">programmers</a> <a class="post-tag" href="/tags/level1/">level1</a> <a class="post-tag" href="/tags/anroid/">anroid</a> <a class="post-tag" href="/tags/implements/">implements</a> <a class="post-tag" href="/tags/greedy/">greedy</a></div></div></div><div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div></div></div></div><script src="https://cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js"></script> <script> $(function() { function updateMermaid(event) { if (event.source === window && event.data && event.data.direction === ModeToggle.ID) { const mode = event.data.message; if (typeof mermaid === "undefined") { return; } let expectedTheme = (mode === ModeToggle.DARK_MODE? "dark" : "default"); let config = { theme: expectedTheme }; /* Re-render the SVG › <https://github.com/mermaid-js/mermaid/issues/311#issuecomment-332557344> */ $(".mermaid").each(function() { let svgCode = $(this).prev().children().html(); $(this).removeAttr("data-processed"); $(this).html(svgCode); }); mermaid.initialize(config); mermaid.init(undefined, ".mermaid"); } } let initTheme = "default"; if ($("html[mode=dark]").length > 0 || ($("html[mode]").length == 0 && window.matchMedia("(prefers-color-scheme: dark)").matches ) ) { initTheme = "dark"; } let mermaidConf = { theme: initTheme /* <default|dark|forest|neutral> */ }; /* Markdown converts to HTML */ $("pre").has("code.language-mermaid").each(function() { let svgCode = $(this).children().html(); $(this).addClass("unloaded"); $(this).after(`<div class=\"mermaid\">${svgCode}</div>`); }); mermaid.initialize(mermaidConf); window.addEventListener("message", updateMermaid); }); </script><div id="mask"></div><a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"> <i class="fas fa-angle-up"></i> </a> <script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script> <script> SimpleJekyllSearch({ searchInput: document.getElementById('search-input'), resultsContainer: document.getElementById('search-results'), json: '/assets/js/data/search.json', searchResultTemplate: '<div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0"> <a href="{url}">{title}</a><div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1"> {categories} {tags}</div><p>{snippet}</p></div>', noResultsText: '<p class="mt-5">Oops! No result founds.</p>', templateMiddleware: function(prop, value, template) { if (prop === 'categories') { if (value === '') { return `${value}`; } else { return `<div class="mr-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`; } } if (prop === 'tags') { if (value === '') { return `${value}`; } else { return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`; } } } }); </script> <script src="https://cdn.jsdelivr.net/combine/npm/lozad/dist/lozad.min.js,npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/clipboard@2/dist/clipboard.min.js"></script> <script defer src="/assets/js/dist/post.min.js"></script> <script> /* see: <https://docs.mathjax.org/en/latest/options/input/tex.html#tex-options> */ MathJax = { tex: { inlineMath: [ /* start/end delimiter pairs for in-line math */ ['$','$'], ['\\(','\\)'] ], displayMath: [ /* start/end delimiter pairs for display math */ ['$$', '$$'], ['\\[', '\\]'] ] } }; </script> <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"> </script> <script src="https://cdn.jsdelivr.net/combine/npm/popper.js@1.16.1,npm/bootstrap@4/dist/js/bootstrap.min.js"></script> <script defer src="/app.js"></script> <script defer src="https://www.googletagmanager.com/gtag/js?id=G-M2M35DP38G"></script> <script> document.addEventListener("DOMContentLoaded", function(event) { window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-M2M35DP38G'); }); </script>
